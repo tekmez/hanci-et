@@ -13,6 +13,7 @@ import Link from "next/link";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import Image from "next/image";
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
 
@@ -268,37 +269,48 @@ export default function Home() {
       ],
     },
   ];
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11,
-  };
   return (
     <div>
       <Head>
         <title>Hanci Et</title>
       </Head>
       <main className={styles.generalContainer}>
-        <div className={styles.section1}>
+        <div
+          className={styles.section1}
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "relative",
+          }}
+        >
+          <Image
+            alt="Mountains"
+            src="/fırın.jpg"
+            layout="fill"
+            objectFit="cover"
+            style={{ zIndex: -1 }}
+          />
           <h3 className={styles.title}>HANCI ET</h3>
           <div className={styles.section_content}>
             <h1>HANCI ET</h1>
             <h4>Ege&apos; yi ete doyurmaya geldik </h4>
           </div>
         </div>
-        <div className={styles.section2}>
-          <div className={styles.section2_content}>
-            <h1>HAKKIMIZDA</h1>
-            <h4>
-              Hancı; Doğu mutfağının yüzyıllardır hiç değişmeyen kebap kültürünü
-              yapılan inovatif dokunuşlarla Batıya tanıtmaya gelen bi
-              işletmedir.
-            </h4>
-          </div>
-        </div>
-        <div className={styles.section3}>
+        <div
+          className={styles.section3}
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "relative",
+          }}
+        >
+          <Image
+            alt="Mountains"
+            src="/et.jpg"
+            layout="fill"
+            objectFit="cover"
+            style={{ zIndex: -1 }}
+          />
           <h1>MENU</h1>
           <div className={styles.section3_content}>
             <div className={styles.section3_content_acordion}>
@@ -360,7 +372,6 @@ export default function Home() {
                   gap: "12px",
                 }}
               >
-                <span style={{ fontSize: "20px" }}>SOSYAL MEDYA</span>
                 <Link
                   href="https://instagram.com/hanciet?igshid=YmMyMTA2M2Y="
                   target="_blank"
@@ -369,6 +380,10 @@ export default function Home() {
                   <InstagramIcon />
                   INSTAGRAM
                 </Link>
+                <span className={styles.phone}>
+                  <LocalPhoneIcon />
+                  +90 (530) 769 4872
+                </span>
               </div>
               <span style={{ fontSize: "20px" }}>KONUM</span>
               <Link
@@ -380,20 +395,22 @@ export default function Home() {
                 Fethiye İzmir karayolu üzeri shell petrol yanı 199/5
               </Link>
             </div>
-            <span
-              style={{
-                fontSize: "20px",
-                display: "flex",
-                alignItems: "center",
-                marginTop: "24px",
-                gap: "8px",
-              }}
-            >
-              <LocalPhoneIcon />
-              +90 (530) 769 4872
-            </span>
           </div>
-          <div className={styles.section5}></div>
+          <div
+            className={styles.section5}
+            style={{
+              width: "60%",
+              height: "100%",
+              position: "relative",
+            }}
+          >
+            <Image
+              alt="Mountains"
+              src="/ızgara.jpg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
       </main>
     </div>

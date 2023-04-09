@@ -10,10 +10,7 @@
 
 .section1{
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/fırın.jpg');
-    background-repeat: no-repeat;
     height: 100%;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,42 +36,9 @@
 }
 
 
-.section2{
-    color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/lahmacun.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    scroll-snap-align: center;
-}
-.section2_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.section2_content h1{
-    font-size: 38px;
-}
-.section2_content h4{
-    margin-top: 18px;
-    font-size: 24px;
-}
-
-
-
 
 .section3{
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/et.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -87,8 +51,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-left: 12px;
-    margin-right: 12px; */
     height: 100%;
     width: 100%;
 }
@@ -139,9 +101,6 @@
     font-size: 30px;
 }
 .section5{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../public/images/ızgara.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     scroll-snap-align: center;
     height: 100%;
     width: 60%;
@@ -154,3 +113,25 @@
     align-items: center;
     gap: 8px;
 }
+.phone{
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 24px;
+    gap: 8px;
+}
+@media screen and (max-width: 600px) {
+    .phone{
+       display: flex;
+       flex-direction: column;
+       font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .phone{
+       display: flex;
+       flex-direction: column;
+       font-size: .87rem;
+    }
+  }
