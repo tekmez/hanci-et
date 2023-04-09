@@ -10,7 +10,7 @@
 
 .section1{
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/fırın.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/fırın.jpg');
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
@@ -41,7 +41,7 @@
 
 .section2{
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/lahmacun.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/lahmacun.jpg');
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
@@ -72,7 +72,7 @@
 
 .section3{
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/et.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/et.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -139,7 +139,7 @@
     font-size: 30px;
 }
 .section5{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../public/ızgara.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../public/images/ızgara.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     scroll-snap-align: center;
